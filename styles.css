@@ -22,3 +22,27 @@ input {
   border: 3px solid #ccc;
   outline: none !important;
 }
+
+input.valid {
+  border-color: #33c871;
+}
+
+input.invalid {
+  border-color: hsl(347, 100%, 51%); 
+}
+
+input + p {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 10px;
+  color: hsl(347, 100%, 51%); 
+  opacity: 0;
+  height: 0;
+}
+
+input.invalid + p {
+  opacity: 1;
+  height: auto;
+  margin-bottom: 5px;
+}
